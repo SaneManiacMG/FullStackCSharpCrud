@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Backend.API.Migrations
 {
     [DbContext(typeof(FullStackDbContext))]
-    [Migration("20230314200606_Initial Migration")]
+    [Migration("20230314205152_Initial Migration")]
     partial class InitialMigration
     {
         /// <inheritdoc />
@@ -31,6 +31,9 @@ namespace Backend.API.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
+                    b.Property<string>("Department")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Email")
                         .HasColumnType("nvarchar(max)");
 
@@ -40,11 +43,8 @@ namespace Backend.API.Migrations
                     b.Property<string>("Phone")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Salary")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("department")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<long>("Salary")
+                        .HasColumnType("bigint");
 
                     b.HasKey("Id");
 

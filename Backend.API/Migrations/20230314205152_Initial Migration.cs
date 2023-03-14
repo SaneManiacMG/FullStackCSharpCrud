@@ -19,8 +19,8 @@ namespace Backend.API.Migrations
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Email = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Phone = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Salary = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    department = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    Salary = table.Column<long>(type: "bigint", nullable: false),
+                    Department = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {

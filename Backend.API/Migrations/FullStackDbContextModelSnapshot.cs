@@ -28,6 +28,9 @@ namespace Backend.API.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
+                    b.Property<string>("Department")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Email")
                         .HasColumnType("nvarchar(max)");
 
@@ -37,11 +40,8 @@ namespace Backend.API.Migrations
                     b.Property<string>("Phone")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Salary")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("department")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<long>("Salary")
+                        .HasColumnType("bigint");
 
                     b.HasKey("Id");
 
