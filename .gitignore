@@ -8,12 +8,8 @@ Backend.API/.vs/Backend.API/v17/.suo
 Backend.API/.vs/Backend.API/FileContentIndex/5cb6df1c-ae71-4b4a-9094-4270e15d282a.vsidx
 Backend.API/.vs/Backend.API/FileContentIndex/a1a0192d-36e9-48b5-a9ea-288d8a3c2d13.vsidx
 Backend.API/.vs/Backend.API/FileContentIndex/e5fa1a8e-ee2f-41c0-b36a-af32294c3c6f.vsidx
-<<<<<<< HEAD
 
 .vs
 obj
 bin
-
-=======
-Backend.API/.vs/Backend.API/v17/.suo
->>>>>>> f76dcec5c65900dd494eeda608e0d045f1076882
+Migrations
